@@ -9,7 +9,7 @@ spec:
         repoURL: https://github.com/johanpostema/cluster-talos
         revision: main
         directories:
-          - path: cluster-talos/core/*
+          - path: core/*
   template:
     metadata:
       name: "{{path.basename}}"
