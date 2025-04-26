@@ -1,3 +1,10 @@
+#
+# LETOP: op Talos (mogelijk ook andere) werkt metallb NIET op een controlplane als de label:
+# node.kubernetes.io/exclude-from-external-load-balancers: ""
+# gedefinieerd is. In Talos moet in de controlplane.yaml dit label uitgecommentarieerd worden en de controlaplane.yaml
+# openieuw geapplied worden. Een andere optie schijnt te zijn de metallb-speaker pod een optie ignoreExcludeLB: true mee te geven
+
+#
 namespace: metallb-system
 
 resources:
