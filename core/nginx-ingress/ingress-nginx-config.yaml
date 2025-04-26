@@ -1,0 +1,17 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+replicas:
+  - name: ingress-nginx-controller
+    count: 3
+patches:
+  - target:
+      kind: Service
+      name: ingress-nginx-controller
+    patch: |-
+      apiVersion: v1
+      kind: Service
+      metadata:
+        name: ingress-nginx-controller
+        namespace: ingress-nginx
+      spec:
+        loadBalancerIP: 192.168.69.101
