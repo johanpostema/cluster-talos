@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/gradecam/cert-manager-dns-lexicon-webhook
-    targetRevision: main
+    targetRevision: master
     path: deploy/cert-manager-dns-lexicon-webhook
     helm:
       releaseName: dns-lexicon-webhook
