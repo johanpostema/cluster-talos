@@ -1,2 +1,2 @@
-resources:
-  - cert-manager-dns-lexicon-webhook.yaml
+#resources:
+#  - cert-manager-dns-lexicon-webhook.yaml
